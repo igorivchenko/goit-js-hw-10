@@ -73,6 +73,7 @@ function onClickStartTimer() {
     } else if (timeLeft <= 0) {
       clearInterval(intervalID);
       input.removeAttribute('disabled');
+      buttonEl.removeAttribute('disabled');
     }
   }, 1000);
 }
